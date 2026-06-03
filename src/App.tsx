@@ -47,7 +47,7 @@ const projects: Project[] = [
     title:
       "Imaging-Informed Progressive Fusion for Mosaic-based Hyperspectral Image Reconstruction",
     time: "Mar. 2026 - May 2026",
-    badges: ["Submitted to Information Fusion", "Co-First Author"],
+    badges: ["Research Publication", "Submitted to Information Fusion", "Co-first Author"],
     description:
       "Designed a physics-guided progressive reconstruction framework for mosaiced and PAN hyperspectral image fusion, converting an ill-posed reconstruction problem into staged inverse recovery aligned with the imaging degradation model.",
     validation:
@@ -78,10 +78,10 @@ const projects: Project[] = [
     description:
       "Implemented a ROS Noetic / C++ stereo VO pipeline with GFTT feature detection, LK optical-flow tracking, stereo triangulation, and PnP/RANSAC pose estimation.",
     validation:
-      "Published odometry, path, camera pose, sparse point cloud, and quality diagnostics for RViz and rosbag-based inspection.",
+      "Validated the localization and navigation pipeline in OptiTrack-assisted real-world UAV experiments.",
     highlights: [
       "Uses calibrated stereo camera models and keyframe-to-current-frame tracking.",
-      "Includes quality-aware feature scoring and top-k PnP input selection.",
+      "Added frame-quality monitoring, VO confidence estimation, reprojection-error filtering, and optional IMU-based consistency checking.",
       "Designed as a stereo VO experiment and visualization pipeline, not a full tightly coupled VIO/SLAM framework.",
     ],
     metrics: ["ROS Noetic / C++", "RViz outputs", "VO confidence diagnostics"],
@@ -114,7 +114,7 @@ const projects: Project[] = [
     highlights: [
       "Runs on MaixCAM with GUI interaction, display feedback, and UART communication.",
       "Defines packet output for laser-point or rectangle-center coordinates.",
-      "Supports downstream closed-loop aiming control while keeping vision and control modules separated.",
+      "Provincial Third Prize, National College Students' Electronic Design Contest, Hunan Province.",
     ],
     metrics: ["MaixCAM", ">25 FPS", "UART packet output"],
     techniques: [
@@ -134,40 +134,6 @@ const projects: Project[] = [
       { label: "Demo Video", href: "assets/demo-auto-aiming.mp4" },
       { label: "GitHub", href: "https://github.com/TurnXu" },
       { label: "Report", href: "#" },
-    ],
-  },
-  {
-    title: "Robotic Arm Hand-Eye Calibration Experiment",
-    time: "May 2026",
-    description:
-      "Implemented an eye-in-hand calibration workflow using robot poses, chessboard images, camera intrinsics, PnP pose estimation, reprojection-error filtering, and OpenCV hand-eye solvers.",
-    validation:
-      "Calibration validation accepted 19 of 20 samples and exported the final Horaud hand-eye result.",
-    highlights: [
-      "Detects chessboard corners and refines them with cornerSubPix.",
-      "Solves target-to-camera poses with PnP and filters high-reprojection-error samples.",
-      "Compares Tsai, Park, and Horaud solvers before selecting the final result.",
-    ],
-    metrics: ["19 / 20 valid samples", "1.120 px avg PnP error", "Horaud solver"],
-    resultRows: [
-      { label: "Valid samples", value: "19 / 20" },
-      { label: "Avg PnP error", value: "1.120 px" },
-      { label: "Method", value: "Horaud" },
-      { label: "Translation", value: "[34.69, 226.74, 7.31] mm" },
-      { label: "Euler ZYX", value: "RX=4.99 deg, RY=-6.51 deg, RZ=-45.44 deg" },
-    ],
-    techniques: [
-      "OpenCV",
-      "PnP",
-      "Hand-Eye Calibration",
-      "Chessboard Detection",
-      "Robot Pose Data",
-      "NumPy",
-      "SciPy",
-    ],
-    links: [
-      { label: "GitHub", href: "https://github.com/TurnXu/robotic-arm-hand-eye-calibration" },
-      { label: "Code", href: "https://github.com/TurnXu/robotic-arm-hand-eye-calibration" },
     ],
   },
 ];
