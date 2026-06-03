@@ -67,9 +67,11 @@ const projects: Project[] = [
     metrics: ["41.84 dB PSNR", "0.9880 SSIM", "0.9186 QNR"],
     featured: true,
     links: [
-      { label: "Paper", href: "assets/hsi-paper.pdf" },
-      { label: "GitHub", href: "https://github.com/TurnXu" },
-      { label: "Report", href: "#" },
+      { label: "PDF", href: "assets/hsi-paper.pdf" },
+      {
+        label: "GitHub",
+        href: "https://github.com/TurnXu/imaging-informed-progressive-fusion-hsi-reconstruction",
+      },
     ],
   },
   {
@@ -100,8 +102,7 @@ const projects: Project[] = [
     demo: "assets/demo-stereo-vo.mp4",
     links: [
       { label: "Demo Video", href: "assets/demo-stereo-vo.mp4" },
-      { label: "GitHub", href: "https://github.com/TurnXu" },
-      { label: "Report", href: "#" },
+      { label: "GitHub", href: "https://github.com/TurnXu/uav-system" },
     ],
   },
   {
@@ -132,8 +133,10 @@ const projects: Project[] = [
     demo: "assets/demo-auto-aiming.mp4",
     links: [
       { label: "Demo Video", href: "assets/demo-auto-aiming.mp4" },
-      { label: "GitHub", href: "https://github.com/TurnXu" },
-      { label: "Report", href: "#" },
+      {
+        label: "GitHub",
+        href: "https://github.com/TurnXu/2025-e-contest-maixcam-vision",
+      },
     ],
   },
 ];
@@ -272,6 +275,7 @@ function App() {
           <a href="#projects">Projects</a>
           <a href="#demo-gallery">Demos</a>
           <a href="#publications">Publications</a>
+          <a href="assets/cv.pdf">CV</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -465,9 +469,10 @@ function App() {
             Reconstruction." Submitted to <em>Information Fusion</em>.
           </p>
           <div className="card-actions">
-            <a href="assets/hsi-paper.pdf">Paper</a>
             <a href="assets/hsi-paper.pdf">PDF</a>
-            <a href="#">Project Page</a>
+            <a href="https://github.com/TurnXu/imaging-informed-progressive-fusion-hsi-reconstruction">
+              Project Page
+            </a>
           </div>
         </article>
       </section>
